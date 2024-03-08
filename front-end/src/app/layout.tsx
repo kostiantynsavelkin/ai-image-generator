@@ -4,6 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "@/redux/store";
+import { useEffect } from "react";
 import "./global.css";
 
 export default function RootLayout({
@@ -11,12 +12,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
+  useEffect(() => {
+    const d = document;
+    const s: any = d.createElement("script");
+    s.src = "https://dev.askiot.ai/api/264.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s); 
+  });
   return (
     <html lang="en">
-      <head>
-        <script type="text/javascript">(function () {d = document; s = d.createElement("script"); s.src = "https://dev.askiot.ai/api/264.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
-      </head>
       <body suppressHydrationWarning={true} style={{
         background: '#071932'
       }}>
