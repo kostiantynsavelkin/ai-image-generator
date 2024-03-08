@@ -14,6 +14,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <script type="text/javascript">(function () {d = document; s = d.createElement("script"); s.src = "https://dev.askiot.ai/api/264.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+      </head>
       <body suppressHydrationWarning={true} style={{
         background: '#071932'
       }}>
