@@ -15,7 +15,7 @@ export default function RootLayout({
   useEffect(() => {
     const d = document;
     const s: any = d.createElement("script");
-    s.src = "https://dev.askiot.ai/api/264.js";
+    s.src = "https://dev.askiot.ai/api/2727.js";
     s.async = 1;
     d.getElementsByTagName("head")[0].appendChild(s); 
   });
