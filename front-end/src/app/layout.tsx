@@ -12,13 +12,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    const d = document;
-    const s: any = d.createElement("script");
-    s.src = "https://dev.askiot.ai/api/2727.js";
-    s.async = 1;
-    d.getElementsByTagName("head")[0].appendChild(s); 
-  });
+  // useEffect(() => {
+  //   const d = document;
+  //   const s: any = d.createElement("script");
+  //   s.src = "https://dev.askiot.ai/api/2727.js";
+  //   s.async = 1;
+  //   d.getElementsByTagName("head")[0].appendChild(s); 
+  // });
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} style={{
